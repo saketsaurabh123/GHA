@@ -1,0 +1,20 @@
+name: My First GitHub Action
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Show runner information
+        run: |
+          echo "I am running on:"
+          uname -a
+
+      - name: Show repository
+        run: echo "Repository: $GITHUB_REPOSITORY"
