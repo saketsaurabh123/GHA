@@ -17,4 +17,4 @@ jobs:
           uname -a
 
       - name: Show repository
-        run: echo "Repository: $GITHUB_REPOSITORY"
+        run:  echo "Repository: $GITHUB_REPOSITORY"
