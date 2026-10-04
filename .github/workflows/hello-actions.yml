@@ -22,3 +22,8 @@ jobs:
       
       - name: Show current date
         run: date
+      - name: Check operating system
+        run: uname -a
+
+      - name: Check disk
+        run: df -h
