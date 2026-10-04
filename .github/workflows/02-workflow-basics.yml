@@ -1,0 +1,23 @@
+name: Workflow Basics
+
+on:
+  push:
+
+jobs:
+  explore-runner:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Show files
+        run: |
+          echo "Files in the repository:"
+          ls -la
+
+      - name: Show current directory
+        run: pwd
+
+      - name: Show repository
+        run: echo "$GITHUB_REPOSITORY"
