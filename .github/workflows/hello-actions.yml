@@ -25,5 +25,13 @@ jobs:
       - name: Check operating system
         run: uname -a
 
+  system-check:
+    needs: hello
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Check operating system
+        run: uname -a
+
       - name: Check disk
         run: df -h
